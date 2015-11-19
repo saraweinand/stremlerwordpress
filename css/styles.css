@@ -1,0 +1,987 @@
+/*
+Theme Name: Stremler Wordpress Theme 1.0
+Theme URI: http://helloimsara.com
+Author: Sara Weinand
+Author URI: http://helloimsara.com
+Description: A WP theme for Stremler Gravel Inc.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* red: #d42027;
+	light grey: #ddd;
+	dark grey: grey;
+*/
+
+
+
+a img.logo {
+	visibility: hidden;
+	}
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+
+	overflow-x: hidden;
+	background: #fff;
+}
+
+.body_container {
+	background: #fff;
+
+}
+
+
+#video-background {
+/*  making the video fullscreen  */
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  width: 100%; 
+  height: auto;
+  z-index: -100;
+}
+
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: .025em;
+}
+
+h2:after {
+	content: " ";
+	display: block;
+	width: 110px;
+	height: 5px;
+	background: #d42027;
+	margin-top: 1%;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #333;
+	font-size: .9em;
+}
+
+h5 {
+	margin-top: 0;
+	padding-top: 0;
+	font-weight: 300;
+}
+
+p {
+	font-weight: 300;
+	font-size: .9em;
+}
+
+em {
+	font-size: .7em;
+}
+
+nav {
+	text-align: center;
+	/*background: url(../images/nav-bg.png) no-repeat;
+	-webkit-background-size: cover;;
+  -moz-background-size: cover;;
+  -o-background-size: cover;;
+  background-size: cover;
+	height: 100%;*/
+}
+
+/* ---------- Hamburger Nav --------------- */
+
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+.mobile div {
+  display: none;
+  margin: 2% 0;
+}
+.mobile button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: url("http://i.imgur.com/vKRaKDX.png") no-repeat center center ;
+  border-radius: none;
+  background-size: 90%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+a {
+  padding: .5em 0;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.desktop {
+  display: inline-block;
+  width: 100%;
+}
+.desktop a {
+  float: left;
+}
+
+
+
+
+
+
+/* -------------------------------------------- */
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	margin:  1.5% 2.5% 0 2.5%;
+	vertical-align: middle;
+}
+
+nav li:nth-child(4) {
+	width: 18%;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+nav li a img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+section img {
+	width: 100%;
+}
+
+#menu li.active a {
+    border-bottom: 3px solid #333;
+    color: #333;
+}
+
+.landing {
+	height:100vh;
+	margin-left: 0;
+	background: url("../images/darkoverlay-01.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landing h1 {
+	color: #fff;
+	font-size: 2.5em;
+	text-align: left;
+	margin-top: -30%;
+	margin-left: 8%;
+	letter-spacing: .05em;
+	width: 40%;
+
+}
+
+.landing h6 {
+	color: #ddd;
+	font-size: 2em;
+	text-align: left;
+	margin-top: -1%;
+	margin-left: 8%;
+	letter-spacing: .05em;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+
+.landing button {
+	background: #d42027;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	margin-left: 1.5%;
+	padding: .75em 2em;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: 300;
+	margin-top: -2%;
+
+
+}
+
+.landing button:first-of-type {
+	background: none;
+	border: 2px solid #fff;
+	margin-left: 8%;
+	padding: .6em 1.8em;
+}
+
+.landing button a {
+
+	color: #fff;
+
+}
+
+.landing button:hover {
+	background: #ddd;
+	border: 2px solid #ddd;
+	color: #000;
+}
+
+.landing button:last-of-type:hover {
+	background: #ddd;
+	border: none;
+}
+
+
+.services, .gallery, .testimonials {
+	width: 70%;
+	margin: 0 15%;
+}
+
+
+.services {
+	padding-top: 1%;
+}
+
+.services section {
+	width: 31%;
+	margin: 0 1.1%;
+	background: grey;
+	color: #fff;
+	text-align: center;
+	min-height: 440px;
+
+}
+
+.services section:first-of-type {
+	margin-left: 0;
+}
+.services section:last-of-type {
+	margin-right: 0;
+}
+
+.services section img {
+	padding-top: 4%;
+}
+
+.services p {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	font-size: .8em;
+	margin-bottom: 8%;
+	font-weight: 100;
+}
+
+.services h3 {
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+.about, .contact,
+.calculator {
+	background: #ddd;
+}
+
+.about section:nth-child(1) img{
+	width: 60%;
+	float: right;
+	margin: 0 2.8% 0 0;
+}
+
+.about section:nth-child(2) {
+	width: 40%;
+	padding-left: 2%;
+}
+
+.calculator section:nth-child(1) img{
+	width: 60%;
+	float: right;
+	margin: 0 2.8% 0 0;
+}
+
+.calculator section:nth-child(2) {
+	width: 40%;
+	padding-left: 2%;
+}
+
+
+.calculator input:nth-child(1),
+.calculator input:nth-child(2) {
+	height: 2.25em;
+	margin: 1% 1% 0% 0;
+	width: 47%;
+	padding: 0;
+	vertical-align: top;
+	border: none;
+}
+
+.calculator section div {
+	display: inline-block;
+	margin: 0 5% 3% 0;
+}
+
+.calculator form {
+	border-bottom: 1px solid grey;
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+}
+
+#depth {
+	width: 100%;
+	display: block;
+}
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: .25em 0;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.radio-custom-label {
+    position: relative;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid grey;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+
+
+}
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #d42027;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.calcTitle {
+	color: #d42027;
+	margin-bottom: 0;
+}
+
+.submit {
+	background: #d42027;
+  color: #fff;
+  border: none;
+  padding: .4em 2.9em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+#coverage {
+	margin: 0;
+	padding: 0;
+}
+
+.coverageh3 {
+	margin: 0;
+	width: 100%;
+	display: block;
+	padding: 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 700}
+
+
+
+.about h2,
+.contact h2,
+.calculator h2 {
+	margin-top: 7%;
+}
+
+.four-even section {
+    width: 24%;
+}
+
+.gallery-rock {
+	margin-right: 1%;
+}
+
+.gallery img {
+	width: 100%;
+	display: block;
+	margin: 1.5% auto;
+}
+
+
+
+.gallery img:nth-child(1),
+.gallery img:nth-child(5) {
+	margin-left: 0;
+}
+.gallery img:nth-child(4),
+.gallery img:nth-child(8) {
+	margin-right: 0;
+}
+
+.gallery-rock.a {
+	background: url(../images/gravel-4.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.b {
+	background: url(../images/gravel-2.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.c {
+	background: url(../images/gravel-3.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.d {
+	background: url(../images/gravel-4.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.e {
+	background: url(../images/gravel-1.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.f {
+	background: url(../images/gravel-7.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.g {
+	background: url(../images/gravel-6.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.h {
+	background: url(../images/gravel-8.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock h4 {
+	margin-top: 2%;
+}
+
+.gallery-rock img:hover {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.imagecontainer {
+	width: 97%;
+	overflow: hidden;
+
+}
+
+.gallery .imagecontainer img{
+	height: 100%;
+
+	
+}
+
+
+.contact section:nth-child(1) div:nth-child(1) {
+	padding-left: 0;
+	background: grey;
+}
+
+.contact section:nth-child(1) div{
+	color: white;
+	width: 60%;
+	float: right;
+	margin: 0 2.8% 0 0;
+	height: 100%;
+}
+
+.contact section:nth-child(1) div img{
+	width: 80%;
+	margin: 0% 0 0 0;
+	float: left;
+	padding-top: 20%;
+}
+
+.contact section:nth-child(1) h3 {
+	margin-bottom: 4%;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+.contact section:nth-child(1) h5 {
+	margin-left: 5%;
+}
+
+.contact section:nth-child(1) h5:last-of-type {
+	margin-top: 5%;
+}
+
+
+.contact section:nth-child(2) {
+	width: 40%;
+	padding-left: 2%;
+}
+
+.contact section:nth-child(1) div.ten-ninety {
+	margin-right: 25%;
+}
+.contact section:nth-child(1) div.ten-ninety:first-of-type {
+	padding-top: 10%;
+}
+
+.contact section:nth-child(1) div.ten-ninety:last-of-type {
+	padding-bottom: 10%;
+}
+
+.contact div.ten-ninety section:nth-child(1) {
+    width: 20%;
+    padding-left: 2%;
+}
+
+.contact div.ten-ninety section:nth-child(2) {
+    width: 70%;
+    padding-left: 2%;
+}
+
+.contact form {
+	margin-bottom: 8%;
+}
+
+.contact input {
+	height: 2.25em;
+	margin: 1% 0% 0 0;
+	width: 100%;
+	padding: 0;
+	vertical-align: top;
+	border: none;
+}
+
+.contact textarea {
+	width: 99.4%;
+	border: none;
+	margin: 1% 0% 0 0;
+	
+}
+
+.contact button,
+.calculator button {
+	background: #d42027;
+	border: none;
+	color: white;
+	font-weight: 300;
+	padding: .4em 2.9em;
+	margin-top: 1%;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+
+::-webkit-input-placeholder {
+ font-weight: 300;
+ text-transform: uppercase;
+ color: #ccc;
+ padding: .1em 1em;
+ font-size: .8em;
+}
+
+.contact input:nth-child(1),
+.contact input:nth-child(2) {
+	width: 49.5%;
+	display: inline-block;
+}
+
+.contact input:nth-child(2) {
+	margin-left: 1%;
+}
+
+.contact section:nth-child(2) {
+	width: 40%;
+	padding-left: 2%;
+}
+
+
+
+.testimonials section img {
+	width: 15%;
+	display: inline-block;
+	border-radius: 50%;
+	margin-top: 8%;
+	margin-bottom: -4%;
+}
+
+.testimonials section h4 {
+	width: 70%;
+	display: inline-block;
+	font-size: .9em;
+	margin: 0% 0 5% 5% ;
+	padding-top: 0;
+	text-transform: none;
+	font-weight: 400;
+}
+
+.footer {
+	margin: 5% 0 0 0;
+	background: #d42027;
+	color: #fff;
+	height: 4em;
+}
+
+.footer h6 {
+	padding: 0 0 0 5%;
+	margin: 4% 0;
+}
+
+.footer a {
+	color: #ddd;
+	padding-left: .5%;
+}
+ 
+.footer section:last-of-type  {
+	width: 45%;
+	text-align: right;
+	padding-right: 5%;
+}
+
+
+
+
+@media screen and (max-width: 1048px) { 
+
+	nav li a {
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width: 948px) { 
+
+	nav li a {
+		font-size: .8em;
+	}
+
+}
+
+@media screen and (max-width: 848px) { 
+
+	nav li {
+		margin: 4% 2% 0 2%;
+	}
+
+	nav li a {
+		font-size: .75em;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	nav {
+		background: none;
+	}
+
+	.nav {
+		background: #444;
+		height: 10%;
+	}
+
+
+
+
+	.mobile {
+    display: block;
+
+
+  }
+
+  .mobile div {
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	z-index: -99;
+  	margin-top: 0%;
+  }
+
+
+.mobile ul {
+	width: 100%;
+}
+
+a img.logo {
+	visibility: visible;
+	width: 40%;
+	z-index: 100;
+	position: relative;
+	margin: 3% 30% 0 30%;
+
+}
+
+.mobile div li:first-of-type {
+	padding-top: 19%;
+}
+
+.mobile div li:last-of-type {
+	padding-bottom: 5%;
+}
+
+.mobile li:first-of-type img {
+	width: 40%;
+}
+  .mobile li {
+    display: block;
+    width: 100%;
+    text-align: center;
+     background: #444;
+     padding: 0;
+     margin: 0;
+        
+  }
+
+  nav li:nth-child(4) {
+    width: 100%;
+}
+
+  .desktop {
+    display: none;
+  }
+
+
+	
+	#desktopnav {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+
+
+
+	button#mobilemenu {
+		visibility: visible;
+		height: 1em;
+		width: 1em;
+		position: absolute;
+		top: 2.5%;
+		left: 2%;
+		background: rgb(255,255,255) url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+	}
+
+
+	#mobilenav {
+		visibility: visible;
+		opacity: 0;
+
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: .8em;
+	}
+
+	h3 {
+		font-size: .9em;
+	}
+
+	#depth div {
+		margin-bottom: 0;
+	}
+
+	.calculator form {
+    border-bottom: none;
+     }
+
+     .contact form {
+     	margin-top: 10%;
+     }
+
+     .contact form input {
+     	margin-bottom: 2%;
+     }
+
+	.services {
+		width: 100%;
+	}
+
+	.services section {
+	min-height: 50px;
+
+}
+
+	.services section:nth-child(1),
+	.services section:nth-child(2),
+	.services section:nth-child(3),
+	.services section:nth-child(4) {
+		width: 90%;
+		display: block;
+		margin: 2% -10% 0 -10%;
+	}
+
+	.services section img {
+		width: 50%;
+		float: left;
+		padding: 0 3% 0 2%;
+
+	}
+
+	.services section h3,
+	.services section p {
+		text-align: left;
+	}
+
+	.services section h3 {
+		margin-top: 5%;
+	}
+
+	.services section p {
+		margin-top: 2%;
+	}
+
+	.services h2 {
+		margin-left: -10%;
+	}
+
+	.about section:nth-child(1) img,
+	.calculator section:nth-child(1) img {
+		width: 85%;
+		float: left;
+		margin-left: 10%;
+	}
+
+	.contact section:nth-child(1) div {
+		width: 85%;
+		float: left;
+		margin-left: 10%;
+
+	}
+
+	.gallery,
+	.testimonials {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.testimonials h4 {
+		font-weight: 300;
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.services section:nth-child(1),
+	.services section:nth-child(2),
+	.services section:nth-child(3),
+	.services section:nth-child(4) {
+
+		margin-top: 4% ;
+	}
+
+	.services section img {
+		width: 100%;
+		float: left;
+		padding: 3% 0% 5% 0%;
+
+	}
+
+	.services section h3,
+	.services section p {
+		text-align: center;
+	}
+
+
+	.services section p {
+		margin-top: 2%;
+	}
+
+
+	.about img,
+	.calculator img {
+		display: none;
+	}
+
+	.about section:nth-child(2),
+	.calculator section:nth-child(2) {
+		width: 90%;
+		padding: 5% 5%;
+	}
+
+	.four-even section {
+    width: 49%;
+}
+
+.contact section:nth-child(1) div {
+    width: 100%;
+    float: left;
+    margin-left: 0%;
+}
+
+.contact section:nth-child(2) {
+	width: 95%;
+}
+
+}
+
+
+/*CLEARFIX*/
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
