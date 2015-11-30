@@ -17,13 +17,16 @@
 <body>
 
 <div class="framework_container">
-	
-    <div class="col one">
-        <section>
+
+    <section>
             <video autoplay loop id="video-background" muted>
-  <source src="<?php bloginfo( 'template_url' ); ?>/videos/timelapse.mp4" type="video/mp4">
-</video>
+                <source src="<?php bloginfo( 'template_url' ); ?>/videos/timelapse.mp4" type="video/mp4">
+            </video>
         </section>  
+	
+    <div class="col one landing_container">
+
+
         <section class="landing">
             <nav class="desktop" id="menu">
                 <li><a href="#about">About</a></li>
@@ -51,9 +54,12 @@
             </nav>
 
             
-            <h6><?php echo get_post_field('post_content', 16); ?></h6>
+            <section><?php echo get_post_field('post_content', 16); ?></section>
+
+<section class="topbanner"><a href=""><h5>Check out our concrete division &#x2192;</h5></a></section>
             
-        </section> 
+        </section> <!--landing-->
+
 
     </div>
 

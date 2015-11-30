@@ -1,11 +1,15 @@
 <?php get_header(); ?>
 
 
-
+<article>
+<?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
-<article class="<?php post_class(); ?>" id="post-<?php the_ID(); ?>">
+        <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+    <?php else : ?>
+<?php endif; ?>
 
- <div class="col three-even services" id="services">
+        <div class="services_container">
+        <div class="col three-even services" id="services">
 
             <div class="title">
                 <h2>Services We Offer</h2>
@@ -22,7 +26,7 @@
                 <img src="<?php bloginfo( 'template_url' ); ?>/images/roadconstruction.jpg" alt="">
                 <p><?php echo get_post_field('post_content', 30); ?></p>
             </section>
-
+    </div>
         </div>
 
         <div class="col fourty-sixty about" id="about">
@@ -37,40 +41,11 @@
 
         <div class="col four-even gallery" id="pit">
             <div class="title">
-                <h2>The gravel pit</h2>
+                <h2><?php echo get_the_title( 58 ); ?></h2>
             </div>
-            <section class="gallery-rock a">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-1.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock b">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-2.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock c">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-3.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock d">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-4.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-           <section class="gallery-rock e">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-5.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock f">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-6.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock g">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-7.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section class="gallery-rock h">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/gravel-8.jpg" alt="">
-                <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
+            
+                <?php echo get_post_field('post_content', 58); ?>
+           
         </div>
 
         <div class="col fourty-sixty calculator" id="calculator">
@@ -115,48 +90,10 @@
 
         <div class="col four-even gallery" id="projects">
             <div class="title">
-                <h2><?php echo get_the_title( 42 ); ?></h2>
+                <h2><?php echo get_the_title( 73 ); ?></h2>
             </div>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-1.jpg" class="cover">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-2.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-3.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-4.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-4.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-3.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-2.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="<?php bloginfo( 'template_url' ); ?>/images/projectgallery-1.jpg" alt="">
-                </div>
-            </section>
+            
+                <?php echo get_post_field('post_content', 73); ?>
         </div>
 
         <div class="col fourty-sixty contact" id="contact">
@@ -189,8 +126,8 @@
                 </div>
             </section>
             <section>
-                <h2><?php echo get_the_title( 13 ); ?></h2>
-                <h4><?php echo get_the_title( 13 ); ?></h4>
+                <h2><?php echo get_the_title( 75 ); ?></h2>
+                <h4><?php echo get_post_field('post_content', 75); ?></h4>
                 <form action="">
                     <input type="text" placeholder="name"><input type="text" placeholder="phone">
                     <input type="text" placeholder="email">
@@ -202,25 +139,13 @@
 
         <div class="col two-even testimonials">
             <div class="title">
-                <h2><?php echo get_the_title( 13 ); ?></h2>
+                <h2><?php echo get_the_title( 77 ); ?></h2>
             </div>
-            <section>
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/user-placeholder.png" alt=""> <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section>
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/user-placeholder.png" alt=""> <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section>
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/user-placeholder.png" alt=""> <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
-            <section>
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/user-placeholder.png" alt=""> <h4><?php echo get_the_title( 13 ); ?></h4>
-            </section>
+            <?php echo get_post_field('post_content', 77); ?>
         </div>
 
    
 </article>
-<?php endwhile; ?>
 </div>
 
 <?php get_sidebar(); ?>
