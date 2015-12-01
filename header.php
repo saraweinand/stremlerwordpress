@@ -28,29 +28,18 @@
 
 
         <section class="landing">
-            <nav class="desktop" id="menu">
+            <nav class="mobile-menu">
+            <label for="show-menu" class="show-menu"><span><img alt="" src="<?php bloginfo( 'template_url' ); ?>/images/gravellogo.png" /></span><div class="lines"><img alt="" src="<?php bloginfo( 'template_url' ); ?>/images/menu.svg" /></div></label>
+                <input type="checkbox" id="show-menu">
+                    <ul id="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pit">Gravel Pit</a></li>
-                <li><a href=""><img alt="" src="<?php bloginfo( 'template_url' ); ?>/images/gravellogo.png" /></a></li>
+                <li class="logo"><a href=""><img alt="" src="<?php bloginfo( 'template_url' ); ?>/images/gravellogo.png" /></a></li>
                 <li><a href="#calculator">Calculator</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-
-            <a href=""><img src="<?php bloginfo( 'template_url' ); ?>/images/gravellogo.png" class="logo"></a>
-            <nav class="mobile">
-                <button></button>
-                
-            <div>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pit">Gravel Pit</a></li>
-                <li><a href="#calculator">Calculator</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </div>
             </nav>
 
             

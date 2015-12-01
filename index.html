@@ -1,142 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title>Stremler Gravel Inc. | Lynden, WA</title> 
     <!--Viewport Meta Tag--><meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Fonts--> <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     
     <!--Stylesheets-->
-    <link rel='stylesheet' href='css/normalize.min.css' type='text/css' media='all'>
-    <link rel='stylesheet' href='css/slice.css' type='text/css' media='all'> 
-    <link rel='stylesheet' href='css/styles.css' type='text/css' media='all'> 
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slice.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
  
 </head>
 <body>
 
 <div class="framework_container">
-	
-    <div class="col one">
-        <section>
+
+    <section>
             <video autoplay loop id="video-background" muted>
-  <source src="timelapse.mp4" type="video/mp4">
-</video>
+                <source src="videos/timelapse.mp4" type="video/mp4">
+            </video>
         </section>  
+    
+    <div class="col one landing_container">
+
+
         <section class="landing">
-            <nav class="desktop" id="menu">
+            <nav class="mobile-menu">
+            <label for="show-menu" class="show-menu"><span><img alt="" src="images/gravellogo.png" /></span><div class="lines"><img alt="" src="images/menu.svg" /></div></label>
+                <input type="checkbox" id="show-menu">
+                    <ul id="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pit">Gravel Pit</a></li>
-                <li><a href=""><img src="img/gravellogo.png" alt=""></a></li>
+                <li class="logo"><a href=""><img alt="" src="images/gravellogo.png" /></a></li>
                 <li><a href="#calculator">Calculator</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <a href=""><img src="img/gravellogo.png" class="logo"></a>
-            <nav class="mobile">
-                <button></button>
-                
-            <div>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pit">Gravel Pit</a></li>
-                <li><a href="#calculator">Calculator</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </div>
-            </nav>
+            
+            <section><h1>WE PROVIDE QUALITY PRODUCTS &amp; SERVICE FOR A REASONABLE PRICE</h1>
+<h6>since 1984</h6>
+<button><a href="#projects">View our Work</a></button><button><a href="#contact">Request a Quote</a></button></section>
 
-            <h1>WE PROVIDE QUALITY PRODUCTS & SERVICE FOR A REASONABLE PRICE</h1>
-            <h6>since 1984</h6>
-            <button><a href="#projects">View our Work</a></button><button><a href="#projects">Request a Quote</a></button>
-<section class="topbanner"><a href=""><h5>Check out Stremler Concrete &#10095;</h5></a></section>
-        </section> 
+<section class="topbanner"><a href=""><h5>Check out our concrete division &#x2192;</h5></a></section>
+            
+        </section> <!--landing-->
+
 
     </div>
 
     <div class="body_container">
 
+
+        <article>
+
+        <div class="services_container">
         <div class="col three-even services" id="services">
+
             <div class="title">
                 <h2>Services We Offer</h2>
             </div>
             <section>
-                <img src="img/resident.jpg" alt="">
-                <h3>Site Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quia dolores cumque animi nihil, amet provident. Tempore aut modi perspiciatis officia, porro corporis, cum odio eius iste. Aliquam, minus repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nostrum, ratione!</p>
+                <img src="images/resident.jpg" alt="">
+                <h3 class="servicestitle">Waterline Installation</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quia dolores cumque animi nihil, amet provident. Tempore aut modi perspiciatis officia, porro corporis, cum odio eius iste. Aliquam, minus repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nostrum, ratione!</p>
             </section>
             <section>
-                <img src="img/sitedev.jpg" alt="">
-                <h3>Road Construction</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque commodi corrupti porro incidunt sapiente omnis provident eos. Accusantium temporibus voluptatum obcaecati perspiciatis.</p>
+                <img src="images/sitedev.jpg" alt="">
+                <h3 class="servicestitle">Waterline Installation</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quia dolores cumque animi nihil, amet provident. Tempore aut modi perspiciatis officia, porro corporis, cum odio eius iste. Aliquam, minus repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nostrum, ratione!</p>
             </section>
             <section>
-                <img src="img/roadconstruction.jpg" alt="">
-                <h3>Waterline Installation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque commodi corrupti porro incidunt sapiente omnis provident eos. Accusantium temporibus voluptatum obcaecati perspiciatis doloremque eligendi quod, ullam maxime similique inventore.</p>
+                <img src="images/roadconstruction.jpg" alt="">
+                <h3 class="servicestitle">Waterline Installation</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quia dolores cumque animi nihil, amet provident. Tempore aut modi perspiciatis officia, porro corporis, cum odio eius iste. Aliquam, minus repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nostrum, ratione!</p>
             </section>
-
+    </div>
         </div>
 
         <div class="col fourty-sixty about" id="about">
             <section>
-                <img src="img/landingpage-2.jpg" alt="">
+                <img src="images/landingpage-2.jpg" alt="">
             </section>
             <section>
                 <h2>About Stremler Gravel</h2>
-                <h4>Our goal is to provide quality products and service for a fair and reasonable price.</h4>
-                <p>Stremler gravel, a family-owned business, was started in 1984 by Virgil and Cheeta Stremler. Vigril operated a 555 John Deere dozer and Cheeta helped by driving the dump truck and doing all the book work. Stremler Gravel Incorporated was extablised in 1990 and Gordon Stremler joined the business in 1996.</p>
-                <p>Today, Stremler Gravel is a major gravel supplier within Whatcom County also providing excavating, utility work (sewer, storm water, water systems, and fire lines), and site development.</p>
+                <h4>OUR GOAL IS TO PROVIDE QUALITY PRODUCTS AND SERVICE FOR A FAIR AND REASONABLE PRICE.</h4>
+<p>Stremler gravel, a family-owned business, was started in 1984 by Virgil and Cheeta Stremler. Vigril operated a 555 John Deere dozer and Cheeta helped by driving the dump truck and doing all the book work. Stremler Gravel Incorporated was established in 1990 and Gordon Stremler joined the business in 1996.</p>
+
+<p>Today, Stremler Gravel is a major gravel supplier within Whatcom County also providing excavating, utility work (sewer, storm water, water systems, and fire lines), and site development.</p>
             </section>
         </div>
 
         <div class="col four-even gallery" id="pit">
             <div class="title">
-                <h2>Stremler's Gravel Pit</h2>
+                <h2>The Gravel Pit</h2>
             </div>
-            <section class="gallery-rock a">
-                <img src="img/gravel-1.jpg" alt="">
-                <h4>Washed Stone</h4>
-            </section>
-            <section class="gallery-rock b">
-                <img src="img/gravel-2.jpg" alt="">
-                <h4>River Pebbles</h4>
-            </section>
-            <section class="gallery-rock c">
-                <img src="img/gravel-3.jpg" alt="">
-                <h4>gravel type</h4>
-            </section>
-            <section class="gallery-rock d">
-                <img src="img/gravel-4.jpg" alt="">
-                <h4>Washed Natural Stone</h4>
-            </section>
-           <section class="gallery-rock e">
-                <img src="img/gravel-5.jpg" alt="">
-                <h4>Crushed Granite Gravel </h4>
-            </section>
-            <section class="gallery-rock f">
-                <img src="img/gravel-6.jpg" alt="">
-                <h4>gravel type</h4>
-            </section>
-            <section class="gallery-rock g">
-                <img src="img/gravel-7.jpg" alt="">
-                <h4>Quartzite Gravel</h4>
-            </section>
-            <section class="gallery-rock h">
-                <img src="img/gravel-8.jpg" alt="">
-                <h4>Pea Gravel</h4>
-            </section>
+            
+                <section class="gallery-rock a image_container"><img class="alignnone wp-image-51 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-11-150x150.jpg" alt="" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-9" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock b image_container"><img class="alignnone wp-image-51 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-11-150x150.jpg" alt="gravel-1" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-9" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock d image_container"><img class="alignnone size-thumbnail wp-image-9" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" /><img class="alignnone wp-image-50 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8-150x150.jpg" alt="Name of the Rock" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock e image_container"><img class="alignnone wp-image-47 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-5-150x150.jpg" alt="Name of the Rock" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-52" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-21-150x150.jpg" alt="gravel-2" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock f image_container"><img class="alignnone wp-image-49 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-7-150x150.jpg" alt="Name of the Rock" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-51" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-11-150x150.jpg" alt="gravel-1" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock g image_container"><img class="alignnone wp-image-45 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-3-150x150.jpg" alt="Name of the Rock" width="150" height="150" /><img class="alignnone wp-image-9 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock h image_container"><img class="alignnone wp-image-44 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-2-150x150.jpg" alt="Name of the Rock" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-9" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" />
+<h4>Washed Stone</h4>
+</section><section class="gallery-rock h image_container"><a href="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-2.jpg"><img class="alignnone wp-image-44 size-thumbnail" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-2-150x150.jpg" alt="Name of the Rock" width="150" height="150" /><img class="alignnone size-thumbnail wp-image-9" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/gravel-8.1-150x150.jpg" alt="gravel-8.1" width="150" height="150" />
+</a>
+<h4>Washed Stone</h4>
+</section>
+           
         </div>
 
         <div class="col fourty-sixty calculator" id="calculator">
             <section>
-                <img src="img/landingpage-4.jpg" alt="">
+                <img src="images/landingpage-4.jpg" alt="">
             </section>
             <section>
                 <h2>Gravel Calculator</h2>
-                <h4>Our gravel coverage calculator will help you get an understanding of how much you will need to order. </h4>
+                <h4>OUR GRAVEL COVERAGE CALCULATOR WILL HELP YOU GET AN UNDERSTANDING OF HOW MUCH YOU WILL NEED TO ORDER.</h4>
                 <h4 class="calcTitle">Area Size:</h4>
                 <form>
 
@@ -164,7 +156,7 @@
                     <input type="button" value="Calculate" class="submit" onClick="calculateGravel()">
 
                 </form>
-                <h3 class="coverageh3">Estimated Cubic Yards: <div id="coverage"></div></h3>
+                <h3 class="coverageh3">Estimated Tons Required: <div id="coverage"></div></h3>
             </section>
         </div>
 
@@ -172,48 +164,142 @@
 
         <div class="col four-even gallery" id="projects">
             <div class="title">
-                <h2>Project Gallery</h2>
+                <h2> Project Gallery</h2>
             </div>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-1.jpg" class="cover">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-2.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-3.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-4.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-4.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-3.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-2.jpg" alt="">
-                </div>
-            </section>
-            <section>
-                <div class="imagecontainer">
-                    <img src="img/projectgallery-1.jpg" alt="">
-                </div>
-            </section>
+            
+                <section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-1" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-2" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-3" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-4" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-5" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-6" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-7" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section><section class="gallery-rock">
+<div class="imagecontainer"><a class="cd-btn-8" href="#0"><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></a></div><h4>Project Title</h4>
+</section>
+
+<!--slide content-->
+<div class="cd-panel-1 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" />
+<img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" />
+<img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" />
+<img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-1 -->
+<div class="cd-panel-2 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-2 -->
+<div class="cd-panel-3 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-3 -->
+<div class="cd-panel-4 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-4 -->
+<div class="cd-panel-5 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-5 -->
+<div class="cd-panel-6 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-6 -->
+<div class="cd-panel-7 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-7 -->
+<div class="cd-panel-8 from-right"><header class="cd-panel-header">
+<a class="cd-panel-close" href="#0">Close</a>
+
+</header>
+<div class="cd-panel-container">
+<div class="cd-panel-content">
+<h1>Title Goes Here</h1><img class="alignnone size-thumbnail wp-image-95" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/projectgallery-1-150x150.jpg" alt="projectgallery-1" width="150" height="150" /></div>
+<!-- cd-panel-content -->
+
+</div>
+<!-- cd-panel-container -->
+
+</div>
+<!-- cd-panel-8 -->
         </div>
 
         <div class="col fourty-sixty contact" id="contact">
@@ -221,35 +307,35 @@
                 <div>
                 <div class="col ten-ninety">
                         <section>
-                            <img src="img/contacticons-03.png" alt="">
+                            <img src="images/contacticons-03.png" alt="">
                         </section>
                         <section>
                             <h3>Location</h3>
-                            <h5>250 Bay Road<br>
-                                Lynden, WA 98264</h5>
-                            <h3>Hours</h3>
-                            <h5>Monday-Friday<br>
-                                7:00am-5:00pm</h5>
+<h5>250 Bay Road<br>
+    Lynden, WA 98264</h5>
+<h3>Hours</h3>
+<h5>Monday-Friday<br>
+    7:00am-5:00pm</h5>
                         </section>
                 </div>
                 <div class="col ten-ninety">
                         <section>
-                            <img src="img/contacticons-02.png" alt="">
+                            <img src="images/contacticons-02.png" alt="">
                         </section>
                         <section>
                             <h3>Office</h3>
-                            <h5>(360) 354-8585</h5>
-                            <h3>Fax</h3>
-                            <h5>(360) 354-8504</h5>
+<h5>(360) 354-8585</h5>
+<h3>Fax</h3>
+<h5>(360) 354-8504</h5>
                         </section>
                 </div>
                 <div class="col ten-ninety">
                         <section>
-                            <img src="img/contacticons-01.png" alt="">
+                            <img src="images/contacticons-01.png" alt="">
                         </section>
                         <section>
                             <h5>duane@stremlergravel.net<br>
-                                lane@stremlergravel.net</h5>
+lane@stremlergravel.net</h5>
                         </section>
                 </div>
                 </div>
@@ -268,22 +354,22 @@
 
         <div class="col two-even testimonials">
             <div class="title">
-                <h2>What our customers say</h2>
+                <h2>What our Customers Say</h2>
             </div>
-            <section>
-                <img src="img/user-placeholder.png" alt=""> <h4>"They are timely, friendly, communicate clearly about orders and are all-around a great bunch of people to work with."</h4>
-            </section>
-            <section>
-                <img src="img/user-placeholder.png" alt=""> <h4>"They were on-time, on-budget, professional, and friendly. Their equipment was well-maintained and their operators well-trained. Highly recommended."</h4>
-            </section>
-            <section>
-                <img src="img/user-placeholder.png" alt=""> <h4>"They are generous and support their community by supporting our non-profit endeavors to help kids"</h4>
-            </section>
-            <section>
-                <img src="img/user-placeholder.png" alt=""> <h4>"Stremler Gravel is fantastic, they are professional, timely, and friendly! I recommend them to everybody!"</h4>
-            </section>
+            <section><img class="alignnone size-thumbnail wp-image-78" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder-150x150.png" alt="user-placeholder" width="150" height="150" />
+<h4>"They are timely, friendly, communicate clearly about orders and are all-around a great bunch of people to work with."</h4>
+</section><section><a href="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder.png"><img class="alignnone size-thumbnail wp-image-78" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder-150x150.png" alt="user-placeholder" width="150" height="150" /></a>
+<h4>"They were on-time, on-budget, professional, and friendly. Their equipment was well-maintained and their operators well-trained. Highly recommended."</h4>
+</section><section><a href="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder.png"><img class="alignnone size-thumbnail wp-image-78" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder-150x150.png" alt="user-placeholder" width="150" height="150" /></a>
+<h4>"They are generous and support their community by supporting our non-profit endeavors to help kids"</h4>
+</section><section><a href="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder.png"><img class="alignnone size-thumbnail wp-image-78" src="http://localhost:8888/wordpress/wp-content/uploads/2015/11/user-placeholder-150x150.png" alt="user-placeholder" width="150" height="150" /></a>
+<h4>"Stremler Gravel is fantastic, they are professional, timely, and friendly! I recommend them to everybody!"</h4>
+</section>
         </div>
 
+   
+</article>
+</div>
         
 
     

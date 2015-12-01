@@ -1,5 +1,5 @@
-$('button').click(function() {
-  $(this).toggleClass('expanded').siblings('div').slideToggle();
+$('.menu-burger, .menuitmes').on('click', function() {
+  $('.menu-items, .menu-burger').toggleClass('expanded').siblings('div').slideToggle();
 });
 
 

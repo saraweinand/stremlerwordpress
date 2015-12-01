@@ -31,6 +31,7 @@ if (document.getElementById('radio-1').checked) {
   
 // 4b: take area and multiply by coverage
 var cubicYards = areaYards * depth;
+var requiredTons = cubicYards * 2;
   
 
   
@@ -39,6 +40,6 @@ var cubicYards = areaYards * depth;
 // Create a variable called el to hold the element whose id attribute has a value of footer
 var el = document.getElementById('coverage');
 // Write the sting of variables
-el.innerHTML = '<h3>' + cubicYards + '</h3>';
+el.innerHTML = '<h3>' + requiredTons + '</h3>';
   
 };

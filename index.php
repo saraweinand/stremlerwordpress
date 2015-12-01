@@ -82,7 +82,7 @@
                     <input type="button" value="Calculate" class="submit" onClick="calculateGravel()">
 
                 </form>
-                <h3 class="coverageh3">Estimated Cubic Yards: <div id="coverage"></div></h3>
+                <h3 class="coverageh3">Estimated Tons Required: <div id="coverage"></div></h3>
             </section>
         </div>
 
